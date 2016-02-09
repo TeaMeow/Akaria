@@ -42,6 +42,21 @@ Akaria::say('Not Found');
 
 &nbsp;
 
+### 簡易回傳
+
+你可以透過內建的函式回傳常用的狀態碼，像下面這樣。
+
+```php
+Akaria::ok();
+Akaria::created();
+```
+
+雅卡莉亞目前支援這些。
+
+
+
+&nbsp;
+
 ### 正面或負面
 
 你也可以直接透過 `positive()` 和 `negative()` 來確認這個狀態碼是好還是壞。
@@ -62,9 +77,9 @@ Akaria::positive(500);   // False
 透過 `is()` 來在數字和狀態碼之間做確認的動作。
 
 ```php
-Akaria::is(404, 'NOT_FOUND');     // True
-Akaria::is(200, 'CREATED');       // False
-Akaria::is(502, 'Bad Gateway');   // True
+Akaria::equals(404, 'NOT_FOUND');     // True
+Akaria::equals(200, 'CREATED');       // False
+Akaria::equals(502, 'Bad Gateway');   // True
 ```
 
 &nbsp;
