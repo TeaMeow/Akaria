@@ -51,9 +51,22 @@ Akaria::ok();
 Akaria::created();
 ```
 
+&nbsp;
+
 雅卡莉亞目前支援這些。
 
-
+| 函式名稱     | 回傳狀態碼 |
+|--------------|------------|
+| ok           | 200        |
+| created      | 201        |
+| noContent    | 204        |
+| notModified  | 304        |
+| bad          | 400        |
+| unauthorized | 401        |
+| forbidden    | 403        |
+| notFound     | 404        |
+| conflict     | 409        |
+| error        | 500        |
 
 &nbsp;
 
@@ -144,7 +157,7 @@ Akaria::equals(502, 'Bad Gateway');   // True
 | 499    | Client Closed Request                | CLIENT_CLOSED           |      |
 | 500    | Internal Server Error                | ERROR                   |      |
 | 501    | Not Implemented                      | NOT_IMPLEMENTED         |      |
-| 502    | Bad Gateway                          | BAD                     |      |
+| 502    | Bad Gateway                          | BAD_GATEWAY             |      |
 | 503    | Service Unavailable                  | UNAVALIABLE             |      |
 | 504    | Gateway Timeout                      | GATEWAY_TIMEOUT         |      |
 | 505    | HTTP Version Not Supported           | HTTP_NOT_SUPPORTED      |      |
