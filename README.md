@@ -137,7 +137,7 @@ Akaria::equals(502, 'Bad Gateway');   // True
 | 411    | Length Required                      | LENGTH_REQUIRED         |      |
 | 412    | Precondition Failed                  | PRECONDITION_FAILED     |      |
 | 413    | Request Entity Too Large             | ENTITY_TOO_LARGE        |      |
-| 414    | Request-URI Too Long                 | URL_TOO_LONG            |      |
+| 414    | Request-URI Too Long                 | URI_TOO_LONG            |      |
 | 415    | Unsupported Media Type               | UNSUPPORTED             |      |
 | 416    | Requested Range Not Satisfiable      | REQUESTED_RANGE         |      |
 | 417    | Expectation Failed                   | EXPECTATION_FAILED      |      |
