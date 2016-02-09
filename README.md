@@ -35,6 +35,9 @@ Akaria::say(404);
 
 /** 或者 */
 Akaria::say('NOT_FOUND');
+
+/** 甚至 */
+Akaria::say('Not Found');
 ```
 
 &nbsp;
@@ -59,8 +62,9 @@ Akaria::positive(500);   // False
 透過 `is()` 來在數字和狀態碼之間做確認的動作。
 
 ```php
-Akaria::is(404, 'NOT_FOUND');   // True
-Akaria::is(200, 'CREATED');     // False
+Akaria::is(404, 'NOT_FOUND');     // True
+Akaria::is(200, 'CREATED');       // False
+Akaria::is(502, 'Bad Gateway');   // True
 ```
 
 &nbsp;
