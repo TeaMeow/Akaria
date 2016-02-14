@@ -163,7 +163,7 @@ class Akaria
      * @param mixed  $args   The arguments.
      */
      
-    function __callStatic($name, $args)
+    public static function __callStatic($name, $args)
     {
         switch($name)
         {
